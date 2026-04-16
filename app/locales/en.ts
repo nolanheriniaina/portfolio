@@ -1,156 +1,188 @@
-// app/locales/en.ts
 export default {
-  // Layout & Navigation
-  nav: {
-    home: "Home",
-    services: "Services",
-    projects: "Projects",
-  },
-
-  // Hero Section
   hero: {
-    badge: "Full Stack Developer",
-    title1: "Let's Build the Future",
-    title2: "Together",
-    description: "Expert in {web}, {data} & {ai} development. I transform your ideas into innovative and high-performance digital solutions.",
-    web: "Web",
-    data: "Data",
-    ia: "AI",
-    stats: {
-      projects: "Projects",
-      years: "Years",
-      satisfaction: "Satisfaction",
+    available:   "Available now",
+    title1:      "Full Stack",
+    title2:      "Developer",
+    description: "I build your web and mobile apps, fix your bugs and maintain your existing projects.",
+    cta: {
+      primary: "Start a project",
+      pricing: "See my pricing",
+      email:   "Send an email",
     },
-    values: {
-      performance: {
-        title: "Optimal Performance",
-        description: "Optimized code and scalable architectures",
-      },
-      security: {
-        title: "Enhanced Security",
-        description: "Data protection and best practices",
-      },
-      deployment: {
-        title: "Fast Deployment",
-        description: "Agile methodologies and CI/CD",
-      },
-      ux: {
-        title: "Exceptional UX",
-        description: "Intuitive and modern interfaces",
-      },
-      maintenance: {
-        title: "Easy Maintenance",
-        description: "Clean and documented code",
-      },
-      roi: {
-        title: "Maximized ROI",
-        description: "Profitable and measurable solutions",
-      },
+    stats: {
+      years:        "of experience",
+      responseTime: "response time",
+      satisfaction: "client satisfaction",
     },
   },
 
-  // Services Section
   services: {
-    badge: "Services & Expertise",
-    title: "What I Offer",
-    subtitle: "Powerful, fast and modern solutions",
-    techStack: "Tech Stack",
-    techStackSubtitle: "Main technologies",
+    eyebrow:  "What I do",
+    title:    "I build what you need",
+    subtitle: "From urgent bugs to full projects — local and international clients.",
     list: {
-      web: {
-        title: "Web Development",
-        description: "Modern, high-performance and responsive web applications",
+      shop: {
+        title:       "I build your online shop",
+        description: "Catalogue, cart, payment, seller dashboard — a complete, tailored store.",
       },
-      mobile: {
-        title: "Mobile Development",
-        description: "Native and cross-platform iOS & Android apps",
+      app: {
+        title:       "I design your mobile app",
+        description: "iOS and Android from a single codebase. Polished UI, native feel.",
+      },
+      debug: {
+        title:       "I fix your bugs fast",
+        description: "Error 500, broken form, slow page — diagnosis and fix within 24h.",
       },
       data: {
-        title: "Data Engineering",
-        description: "Data architecture, ETL, data analysis",
+        title:       "I organise your data",
+        description: "Database, API, automated exports — your data reliable and accessible.",
+      },
+      deploy: {
+        title:       "I deploy and maintain your app",
+        description: "Launch, security updates, monitoring — your app runs without a hitch.",
       },
       ai: {
-        title: "Artificial Intelligence",
-        description: "AI solutions, Machine Learning, NLP",
-      },
-      devops: {
-        title: "Deployment & DevOps",
-        description: "CI/CD, containerization, cloud",
-      },
-      maintenance: {
-        title: "Maintenance & Support",
-        description: "Monitoring, debugging, evolutions",
+        title:       "I add intelligence to your tools",
+        description: "Auto-suggestions, text processing, chatbot — AI working for your business.",
       },
     },
   },
 
-  // Projects Section
   projects: {
-    badge: "Recent Projects",
-    title: "My Work",
-    client: "Client",
-    year: "Year",
-    duration: "Duration",
-    technologies: "Technologies",
-    challenge: "Challenge",
-    solution: "Solution",
-    viewProject: "View",
-    viewMore: "View more",
-    prevImage: "Previous image",
-    nextImage: "Next image",
-    prevProject: "Previous project",
-    nextProject: "Next project",
+    eyebrow:      "Work",
+    title:        "Recent projects",
+    challenge:    "Problem",
+    solution:     "Solution",
+    year:         "Year",
+    duration:     "Duration",
+    confidential: "Visuals blurred for client confidentiality.",
     list: {
       cfm: {
-        title: "Comprehensive management platform for training center",
-        description: "Complete web application for managing students, teachers, courses, schedules, grades, assignments, documents and absences through a modern and automated dashboard.",
-        challenge: "Unifying modules previously managed on scattered tools (Excel, Google Drive, WhatsApp) into a single platform. Enabling reliable schedule and grade management with strict access rights.",
-        solution: "Design of a modular back-office with role management, automatic document generation, internal notifications, student tracking and sophisticated absence system. Performance optimization with Livewire.",
+        title:       "Management platform for a training centre",
+        description: "Full administration: students, schedules, grades, documents and attendance.",
+        challenge:   "Everything was managed on Excel and WhatsApp — impossible to maintain.",
+        solution:    "A unified back-office with role management, auto-generated documents and attendance tracking.",
       },
       monument: {
-        title: "Educational mobile app for discovering historical buildings",
-        description: "An immersive mobile experience to discover churches and monuments through anecdotes, mini-games, 3D content, historical information and guided tours.",
-        challenge: "Creating an attractive cultural experience for young people while integrating reliable historical content, 3D and mini-games, without sacrificing performance.",
-        solution: "Development of a lightweight 3D engine with Three.js, implementation of a quiz/XP system, mobile cache optimization and integration of a CMS for managing stories and media.",
+        title:       "Historic monument discovery app",
+        description: "Immersive mobile experience: stories, quizzes, 3D content and guided tours.",
+        challenge:   "Make culture engaging for young users without sacrificing performance.",
+        solution:    "Lightweight 3D engine (Three.js), quiz/XP system and CMS for stories.",
       },
       hotel: {
-        title: "Hotel booking platform with price negotiation",
-        description: "Mobile application + hotel back-office allowing to search for a hotel by dates, location, number of people, negotiate prices, receive counter-offers, pay online and manage bookings.",
-        challenge: "Integrating a real-time negotiation system between client and hotelier, while synchronizing availability via OpenGDS and ensuring secure payment.",
-        solution: "Implementation of a transactional chat system, dynamic pricing management, notification automation, dashboards for hoteliers and Stripe integration for payments.",
+        title:       "Hotel booking platform with negotiation",
+        description: "Search, offers, counter-offers, online payment — mobile and back-office.",
+        challenge:   "Sync availability in real time while enabling price negotiation.",
+        solution:    "Transactional chat, dynamic pricing management and Stripe integration.",
       },
       events: {
-        title: "Social mobile app for event management",
-        description: "Create and discover events, invite friends, manage participants, chat in real-time, book via internal wallet and pay online.",
-        challenge: "Managing participants, invitations, group messages and payments in real-time — all in a single high-performance app.",
-        solution: "Implementation of Firebase for real-time, Strapi for content management, an internal wallet for bookings and a fluid UX inspired by modern social networks.",
+        title:       "Event management mobile app",
+        description: "Create, discover, invite, chat and pay — all from the app.",
+        challenge:   "Manage participants, messages and payments in real time in one app.",
+        solution:    "Firebase for real-time, Strapi for content, internal wallet.",
       },
     },
-    confidential: "Some images are blurred to respect client confidentiality."
   },
 
-  // Contact Section (Sidebar & Floating Button)
   contact: {
-    title: "Contact Me",
-    quickMessage: "Quick message",
-    sendMessage: "Send a message",
-    name: "Your name",
-    email: "Your email",
-    emailPlaceholder: "Email",
-    message: "Your message...",
-    send: "Send message",
-    sending: "Sending...",
-    success: "Message sent!",
-    responseTime: "I'll get back to you as soon as possible",
-    talkAboutProject: "Tell me about your project!",
-    close: "Close",
-    location: "Paris, France",
+    title:        "Your project",
+    name:         "Your name",
+    email:        "Your email",
+    message:      "Describe your need…",
+    send:         "Send",
+    sending:      "Sending…",
+    success:      "Message sent!",
+    responseTime: "Reply within 24h",
   },
 
-  // SEO & Meta
-  seo: {
-    title: "RTook - Full Stack Developer | Web, Mobile, Data & AI",
-    description: "Full Stack Developer expert in React, Next.js, Laravel, Ionic. Web & mobile app development, data solutions and AI. 5+ years experience. Portfolio and projects.",
-    keywords: "full stack developer, react, next.js, laravel, ionic, web development, mobile development, data engineering, artificial intelligence, paris, freelance",
+  pricing: {
+    eyebrow:  "Pricing",
+    title:    "Clear prices,",
+    subtitle: "Available for local and international projects.",
+    currency: { mg: "Ariary (MGA)", eu: "Euro (€)" },
+    plans: {
+      debug: {
+        name:             "Quick fix",
+        tagline:          "Bug fixed within 24h",
+        period:           "/ fix",
+        badge:            "",
+        cta:              "Submit a bug",
+        note:             "Perfect for emergencies",
+        whatsappMessage:  "Hello, I'd like to submit a bug for a quick fix.",
+        features: [
+          "Targeted bug fix",
+          "Error 500 / 404 / forms",
+          "Performance optimisation",
+          "Delivered within 24h",
+          "1 revision included",
+          "WhatsApp / Email support",
+        ],
+      },
+      project: {
+        name:             "Project development",
+        tagline:          "Custom application",
+        period:           "/ project",
+        badge:            "Most requested",
+        cta:              "Request a free quote",
+        note:             "Reply within 24h",
+        whatsappMessage:  "Hello, I'd like a quote for a development project.",
+        features: [
+          "Requirements analysis included",
+          "Laravel, React, Next.js, Ionic",
+          "Modern responsive design",
+          "REST API + integrations",
+          "Testing & deployment",
+          "Documentation delivered",
+          "30-day post-delivery support",
+        ],
+      },
+      maintenance: {
+        name:             "Monthly maintenance",
+        tagline:          "Your dedicated developer",
+        period:           "/ month",
+        badge:            "",
+        cta:              "Start maintenance",
+        note:             "Cancel anytime",
+        whatsappMessage:  "Hello, I'm interested in the monthly maintenance plan.",
+        features: [
+          "10h of work/month",
+          "Bug fixes priority",
+          "Security updates",
+          "Regular backups",
+          "Monthly report",
+          "WhatsApp availability",
+          "No commitment",
+        ],
+      },
+    },
+    guarantees: [
+      { title: "Fast reply",           desc: "I reply within 24h, usually much sooner." },
+      { title: "Quality guaranteed",   desc: "Clean, tested, documented code." },
+      { title: "No commitment",        desc: "Cancel maintenance anytime." },
+    ],
+    faq: [
+      {
+        q: "How does payment work?",
+        a: "50% upfront, 50% on delivery. Maintenance: monthly payment. Mobile Money and bank transfer accepted.",
+      },
+      {
+        q: "Do you work remotely?",
+        a: "Yes, 100% remote from Antananarivo, Madagascar. Local and international clients via WhatsApp, email and video calls.",
+      },
+      {
+        q: "What are the delivery timelines?",
+        a: "Showcase site: 1–2 weeks. Full application: 4–12 weeks. Detailed quote with schedule provided.",
+      },
+      {
+        q: "What if I'm not satisfied?",
+        a: "I'll revise until you're happy. For bug fixes, no charge if the issue isn't resolved.",
+      },
+    ],
+    cta: {
+      title:    "Have a project in mind?",
+      subtitle: "Describe your need — free estimate within 24h.",
+      btn:      "Chat on WhatsApp",
+      wp:       "Hello, I'd like to discuss a project.",
+    },
   },
 } as const;

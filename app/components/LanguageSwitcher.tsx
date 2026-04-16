@@ -1,30 +1,36 @@
-// app/components/LanguageSwitcher.tsx
 "use client";
 
 import { useChangeLocale, useCurrentLocale } from "@/app/locales/client";
+
+const LOCALES = [
+  { code: "fr", flag: "🇫🇷", label: "Français" },
+  { code: "en", flag: "🇬🇧", label: "English" },
+] as const;
 
 export default function LanguageSwitcher() {
   const changeLocale = useChangeLocale();
   const currentLocale = useCurrentLocale();
 
   return (
-    <div className="flex items-center gap-1"> {/* réduire l'espace entre les drapeaux */}
-      <button
-        onClick={() => changeLocale("fr")}
-        className={`w-14 h-14 text-3xl max-[720px]:w-8 max-[720px]:h-8 max-[720px]:text-xl rounded-full p-0.5 transition-all ${
-          currentLocale === "fr" ? "ring-2 ring-indigo-500" : ""
-        }`}
-      >
-        🇫🇷
-      </button>
-      <button
-        onClick={() => changeLocale("en")}
-        className={`w-14 h-14 text-3xl max-[720px]:w-8 max-[720px]:h-8 max-[720px]:text-xl rounded-full p-0.5 transition-all ${
-          currentLocale === "en" ? "ring-2 ring-indigo-500" : ""
-        }`}
-      >
-        🇬🇧
-      </button>
+    <div className="flex items-center gap-1 p-1 rounded-lg bg-white border border-stone-200 shadow-sm">
+      {LOCALES.map(({ code, flag, label }) => {
+        const active = currentLocale === code;
+        return (
+          <button
+            key={code}
+            onClick={() => changeLocale(code)}
+            aria-label={label}
+            className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-md text-xs font-medium transition-all ${
+              active
+                ? "bg-stone-900 text-stone-50"
+                : "text-stone-500 hover:text-stone-900 hover:bg-stone-100"
+            }`}
+          >
+            <span className="text-sm leading-none">{flag}</span>
+            <span className="uppercase tracking-wide">{code}</span>
+          </button>
+        );
+      })}
     </div>
   );
 }

@@ -1,0 +1,25 @@
+{
+    "name": "Nolan Heriniaina",
+    "domain": "votre-domaine.com",
+    "logo": "/logo.svg",
+    "seo": {
+      "fr": {
+        "title": "Nolan Heriniaina - Développeur Full Stack | Laravel, React, Next.js",
+        "description": "Développeur Full Stack basé à Antananarivo, Madagascar. Expert Laravel, React, Next.js, Ionic. Correction de bugs rapide, développement d'applications web et mobile. Disponible pour missions locales et internationales.",
+        "keywords": "développeur full stack madagascar, développeur laravel antananarivo, développeur react madagascar, correction bug laravel, développement web madagascar, freelance dev madagascar"
+      },
+      "en": {
+        "title": "Nolan Heriniaina - Full Stack Developer | Laravel, React, Next.js",
+        "description": "Full Stack Developer based in Antananarivo, Madagascar. Expert in Laravel, React, Next.js, Ionic. Fast bug fixes, web and mobile app development. Available for local and international projects.",
+        "keywords": "full stack developer madagascar, laravel developer antananarivo, react developer madagascar, bug fix laravel, web development madagascar, freelance dev madagascar"
+      }
+    },
+    "jsonLd": {
+      "jobTitle": "Développeur Full Stack",
+      "description": "Développeur Full Stack expert Laravel, React, Next.js. Basé à Antananarivo, Madagascar.",
+      "knowsAbout": [
+        "Laravel", "React", "Next.js", "TypeScript",
+        "PHP", "Ionic", "Node.js", "MySQL", "PostgreSQL"
+      ]
+    }
+  }

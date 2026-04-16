@@ -1,0 +1,41 @@
+[
+  {
+    "id": "debug",
+    "icon": "Wrench",
+    "badge": "",
+    "nameKey": "pricing.plans.debug.name",
+    "taglineKey": "pricing.plans.debug.tagline",
+    "price": { "mg": "50 000 Ar", "eu": "10 €", "usd": "$11" },
+    "periodKey": "pricing.plans.debug.period",
+    "featuresKey": "pricing.plans.debug.features",
+    "ctaKey": "pricing.plans.debug.cta",
+    "noteKey": "pricing.plans.debug.note",
+    "whatsappMessageKey": "pricing.plans.debug.whatsappMessage"
+  },
+  {
+    "id": "project",
+    "icon": "Code2",
+    "badge": "pricing.plans.project.badge",
+    "nameKey": "pricing.plans.project.name",
+    "taglineKey": "pricing.plans.project.tagline",
+    "price": { "mg": "Sur devis", "eu": "Sur devis", "usd": "On quote" },
+    "periodKey": "pricing.plans.project.period",
+    "featuresKey": "pricing.plans.project.features",
+    "ctaKey": "pricing.plans.project.cta",
+    "noteKey": "pricing.plans.project.note",
+    "whatsappMessageKey": "pricing.plans.project.whatsappMessage"
+  },
+  {
+    "id": "maintenance",
+    "icon": "RefreshCw",
+    "badge": "",
+    "nameKey": "pricing.plans.maintenance.name",
+    "taglineKey": "pricing.plans.maintenance.tagline",
+    "price": { "mg": "200 000 Ar", "eu": "40 €", "usd": "$44" },
+    "periodKey": "pricing.plans.maintenance.period",
+    "featuresKey": "pricing.plans.maintenance.features",
+    "ctaKey": "pricing.plans.maintenance.cta",
+    "noteKey": "pricing.plans.maintenance.note",
+    "whatsappMessageKey": "pricing.plans.maintenance.whatsappMessage"
+  }
+]

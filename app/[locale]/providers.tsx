@@ -1,4 +1,3 @@
-//app/[locale]/providers.tsx
 "use client";
 import { PropsWithChildren } from "react";
 import AppContextProvider from "../core/contexts/AppContext";

@@ -1,0 +1,17 @@
+{
+    "email": "tokyfreel@gmail.com",
+    "phone": "+261377657442",
+    "phoneDisplay": "+261 37 76 574 42",
+    "whatsapp": "261377657442",
+    "location": {
+      "city": "Antananarivo",
+      "country": "Madagascar",
+      "countryCode": "MG"
+    },
+    "social": {
+      "github": "https://github.com/votre-username",
+      "linkedin": "https://linkedin.com/in/votre-username"
+    },
+    "availability": true,
+    "responseTime": "24h"
+  }

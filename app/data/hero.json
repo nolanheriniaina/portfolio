@@ -1,0 +1,7 @@
+{
+    "stats": [
+      { "value": "5 ans",  "labelKey": "hero.stats.years"        },
+      { "value": "< 24h",  "labelKey": "hero.stats.responseTime" },
+      { "value": "100 %",  "labelKey": "hero.stats.satisfaction" }
+    ]
+  }

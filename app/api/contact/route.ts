@@ -12,7 +12,6 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // Vérifie que les variables d'environnement existent
     const user = process.env.EMAIL_USER;
     const pass = process.env.EMAIL_PASS;
 
@@ -23,13 +22,11 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // Crée le transporteur Nodemailer
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: { user, pass },
     });
 
-    // Envoi de l'email
     await transporter.sendMail({
       from: `"${name}" <${email}>`,
       to: user,

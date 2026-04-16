@@ -1,156 +1,188 @@
-// app/locales/fr.ts
 export default {
-  // Layout & Navigation
-  nav: {
-    home: "Accueil",
-    services: "Services",
-    projects: "Projets",
-  },
-
-  // Hero Section
   hero: {
-    badge: "Développeur Full Stack",
-    title1: "Créons l'Avenir",
-    title2: "Ensemble",
-    description: "Expert en développement {web}, {data} & {ia}. Je transforme vos idées en solutions digitales innovantes et performantes.",
-    web: "Web",
-    data: "Data",
-    ia: "IA",
-    stats: {
-      projects: "Projets",
-      years: "Années",
-      satisfaction: "Satisfaction",
+    available:   "Disponible maintenant",
+    title1:      "Développeur",
+    title2:      "Full Stack",
+    description: "Je conçois vos applications web et mobile, corrige vos bugs et assure la maintenance de vos projets existants.",
+    cta: {
+      primary: "Démarrer un projet",
+      pricing: "Voir mes tarifs",
+      email:   "Envoyer un email",
     },
-    values: {
-      performance: {
-        title: "Performance Optimale",
-        description: "Code optimisé et architectures scalables",
-      },
-      security: {
-        title: "Sécurité Renforcée",
-        description: "Protection des données et best practices",
-      },
-      deployment: {
-        title: "Déploiement Rapide",
-        description: "Méthodologies agiles et CI/CD",
-      },
-      ux: {
-        title: "UX Exceptionnelle",
-        description: "Interfaces intuitives et modernes",
-      },
-      maintenance: {
-        title: "Maintenance Facilitée",
-        description: "Code propre et documenté",
-      },
-      roi: {
-        title: "ROI Maximisé",
-        description: "Solutions rentables et mesurables",
-      },
+    stats: {
+      years:        "d'expérience",
+      responseTime: "de délai de réponse",
+      satisfaction: "de satisfaction client",
     },
   },
 
-  // Services Section
   services: {
-    badge: "Services & Expertise",
-    title: "Ce que je propose",
-    subtitle: "Solutions puissantes, rapides et modernes",
-    techStack: "Stack Technique",
-    techStackSubtitle: "Technologies principales",
+    eyebrow:  "Ce que je fais",
+    title:    "Je construis ce dont vous avez besoin",
+    subtitle: "Du bug urgent au projet complet — missions locales et internationales.",
     list: {
-      web: {
-        title: "Développement Web",
-        description: "Applications web modernes, performantes et responsive",
+      shop: {
+        title:       "Je crée votre boutique en ligne",
+        description: "Catalogue, panier, paiement, tableau de bord vendeur — une boutique complète et sur mesure.",
       },
-      mobile: {
-        title: "Développement Mobile",
-        description: "Apps natives et cross-platform iOS & Android",
+      app: {
+        title:       "Je conçois votre application mobile",
+        description: "iOS et Android depuis une seule base de code. Interface soignée, expérience native.",
+      },
+      debug: {
+        title:       "Je corrige vos bugs rapidement",
+        description: "Erreur 500, formulaire cassé, page lente — diagnostic et correction sous 24h.",
       },
       data: {
-        title: "Data Engineering",
-        description: "Architecture data, ETL, analyse de données",
+        title:       "J'organise vos données",
+        description: "Base de données, API, exports automatisés — vos données accessibles et fiables.",
+      },
+      deploy: {
+        title:       "Je déploie et maintiens votre app",
+        description: "Mise en ligne, mises à jour de sécurité, monitoring — votre app tourne sans accroc.",
       },
       ai: {
-        title: "Intelligence Artificielle",
-        description: "Solutions IA, Machine Learning, NLP",
-      },
-      devops: {
-        title: "Déploiement & DevOps",
-        description: "CI/CD, containerisation, cloud",
-      },
-      maintenance: {
-        title: "Maintenance & Support",
-        description: "Monitoring, debugging, évolutions",
+        title:       "J'intègre de l'intelligence dans vos outils",
+        description: "Suggestions automatiques, traitement de texte, chatbot — l'IA au service de votre métier.",
       },
     },
   },
 
-  // Projects Section
   projects: {
-    badge: "Projets Récents",
-    title: "Mes Réalisations",
-    client: "Client",
-    year: "Année",
-    duration: "Durée",
-    technologies: "Technologies",
-    challenge: "Challenge",
-    solution: "Solution",
-    viewProject: "Voir",
-    viewMore: "Voir plus",
-    prevImage: "Image précédente",
-    nextImage: "Image suivante",
-    prevProject: "Projet précédent",
-    nextProject: "Projet suivant",
+    eyebrow:      "Réalisations",
+    title:        "Quelques projets",
+    challenge:    "Problème",
+    solution:     "Réponse",
+    year:         "Année",
+    duration:     "Durée",
+    confidential: "Visuels floutés — confidentialité client.",
     list: {
       cfm: {
-        title: "Plateforme de gestion intégrale pour centre de formation",
-        description: "Application web complète permettant d'administrer les élèves, les professeurs, les formations, les plannings, les notes, les devoirs, les documents et les absences grâce à un tableau de bord moderne et automatisé.",
-        challenge: "Unifier dans une seule plateforme des modules auparavant gérés sur des outils dispersés (Excel, Google Drive, WhatsApp). Permettre une gestion fiable des plannings et notes avec des droits d'accès stricts.",
-        solution: "Conception d'un back-office modulaire avec gestion des rôles, génération automatique de documents, notifications internes, suivi des élèves et système d'absences sophistiqué. Optimisation des performances avec Livewire.",
+        title:       "Plateforme de gestion pour centre de formation",
+        description: "Administration complète : élèves, plannings, notes, documents et absences.",
+        challenge:   "Tout était géré sur Excel et WhatsApp — impossible à maintenir.",
+        solution:    "Un back-office unifié avec gestion des rôles, documents auto-générés et suivi des absences.",
       },
       monument: {
-        title: "Application mobile ludique de découverte des édifices historiques",
-        description: "Une expérience mobile immersive permettant de découvrir des églises et monuments grâce à des anecdotes, mini-jeux, contenus 3D, informations historiques et parcours guidés.",
-        challenge: "Créer une expérience culturelle attractive pour les jeunes tout en intégrant du contenu historique fiable, de la 3D et des mini-jeux, sans sacrifier les performances.",
-        solution: "Développement d'un moteur 3D léger avec Three.js, mise en place d'un système de quiz/XP, optimisation du cache mobile et intégration d'un CMS pour la gestion des récits et médias.",
+        title:       "Application de découverte des monuments historiques",
+        description: "Expérience mobile immersive : anecdotes, quiz, contenus 3D et parcours guidés.",
+        challenge:   "Rendre la culture attractive pour les jeunes sans sacrifier les performances.",
+        solution:    "Moteur 3D léger (Three.js), système de quiz/XP et CMS pour les récits.",
       },
       hotel: {
-        title: "Plateforme de réservation d'hôtels avec négociation de prix",
-        description: "Application mobile + backoffice hôtelier permettant de rechercher un hôtel selon dates, localisation, nb de personnes, négocier les prix, recevoir des contre-offres, payer en ligne et gérer les réservations.",
-        challenge: "Intégrer un système de négociation en temps réel entre client et hôtelier, tout en synchronisant les disponibilités via OpenGDS et en assurant un paiement sécurisé.",
-        solution: "Mise en place d'un système de chat transactionnel, gestion dynamique des tarifs, automatisation des notifications, tableaux de bord pour hôteliers et intégration Stripe pour les paiements.",
+        title:       "Plateforme de réservation hôtelière avec négociation",
+        description: "Recherche, offres, contre-offres, paiement en ligne — mobile et backoffice.",
+        challenge:   "Synchroniser les disponibilités en temps réel tout en permettant la négociation.",
+        solution:    "Chat transactionnel, gestion dynamique des tarifs et intégration Stripe.",
       },
       events: {
-        title: "Application mobile sociale pour la gestion d'événements",
-        description: "Créer et découvrir des événements, inviter des amis, gérer les participants, discuter en direct, réserver via wallet interne et payer en ligne.",
-        challenge: "Gérer en temps réel les participants, invitations, messages groupés et paiements — le tout dans une seule app performante.",
-        solution: "Mise en place de Firebase pour le temps réel, Strapi pour la gestion des contenus, un wallet interne pour les réservations et une UX fluide inspirée des réseaux sociaux modernes.",
+        title:       "App mobile de gestion d'événements",
+        description: "Créer, découvrir, inviter, discuter et payer — tout depuis l'app.",
+        challenge:   "Gérer participants, messages et paiements en temps réel dans une seule app.",
+        solution:    "Firebase pour le temps réel, Strapi pour les contenus, wallet interne.",
       },
     },
-    confidential: "Certaines images sont floutées pour respecter la confidentialité du client."
   },
 
-  // Contact Section (Sidebar & Floating Button)
   contact: {
-    title: "Contactez-moi",
-    quickMessage: "Message rapide",
-    sendMessage: "Envoyez un message",
-    name: "Votre nom",
-    email: "Votre email",
-    emailPlaceholder: "Email",
-    message: "Votre message...",
-    send: "Envoyer le message",
-    sending: "Envoi en cours...",
-    success: "Message envoyé !",
-    responseTime: "Je vous répondrai dans les plus brefs délais",
-    talkAboutProject: "Parlez-moi de votre projet !",
-    close: "Fermer",
-    location: "Paris, France",
+    title:        "Votre projet",
+    name:         "Votre nom",
+    email:        "Votre email",
+    message:      "Décrivez votre besoin…",
+    send:         "Envoyer",
+    sending:      "Envoi…",
+    success:      "Message envoyé !",
+    responseTime: "Réponse sous 24h",
   },
 
-  // SEO & Meta
-  seo: {
-    title: "RTook - Développeur Full Stack | Web, Mobile, Data & IA",
-    description: "Développeur Full Stack expert en React, Next.js, Laravel, Ionic. Création d'applications web, mobile, solutions data et IA. 5+ ans d'expérience. Portfolio et projets.",
-    keywords: "développeur full stack, react, next.js, laravel, ionic, développement web, développement mobile, data engineering, intelligence artificielle, paris, freelance",
+  pricing: {
+    eyebrow:  "Tarifs",
+    title:    "Des prix clairs,",
+    subtitle: "Disponible pour missions locales et internationales.",
+    currency: { mg: "Ariary (MGA)", eu: "Euro (€)" },
+    plans: {
+      debug: {
+        name:             "Dépannage rapide",
+        tagline:          "Bug corrigé sous 24h",
+        period:           "/ intervention",
+        badge:            "",
+        cta:              "Soumettre un bug",
+        note:             "Idéal pour une urgence",
+        whatsappMessage:  "Bonjour, je souhaite soumettre un bug pour correction rapide.",
+        features: [
+          "Correction d'un bug ciblé",
+          "Erreur 500 / 404 / formulaires",
+          "Optimisation lenteur",
+          "Livraison sous 24h",
+          "1 révision incluse",
+          "Support WhatsApp / Email",
+        ],
+      },
+      project: {
+        name:             "Développement projet",
+        tagline:          "Application sur mesure",
+        period:           "/ projet",
+        badge:            "Le plus demandé",
+        cta:              "Demander un devis gratuit",
+        note:             "Réponse sous 24h",
+        whatsappMessage:  "Bonjour, je souhaite un devis pour un projet de développement.",
+        features: [
+          "Analyse des besoins incluse",
+          "Laravel, React, Next.js, Ionic",
+          "Design responsive moderne",
+          "API REST + intégrations",
+          "Tests & déploiement",
+          "Documentation livrée",
+          "Support 30 jours post-livraison",
+        ],
+      },
+      maintenance: {
+        name:             "Maintenance mensuelle",
+        tagline:          "Votre dev dédié",
+        period:           "/ mois",
+        badge:            "",
+        cta:              "Démarrer la maintenance",
+        note:             "Résiliable à tout moment",
+        whatsappMessage:  "Bonjour, je suis intéressé par la maintenance mensuelle.",
+        features: [
+          "10h d'interventions/mois",
+          "Corrections bugs en priorité",
+          "Mises à jour sécurité",
+          "Sauvegardes régulières",
+          "Rapport mensuel",
+          "Disponibilité WhatsApp",
+          "Sans engagement",
+        ],
+      },
+    },
+    guarantees: [
+      { title: "Réponse rapide",    desc: "Je réponds dans les 24h, souvent bien avant." },
+      { title: "Qualité garantie",  desc: "Code propre, testé, documenté." },
+      { title: "Sans engagement",   desc: "Résiliez la maintenance quand vous voulez." },
+    ],
+    faq: [
+      {
+        q: "Comment se passe le paiement ?",
+        a: "50% à la commande, 50% à la livraison. Maintenance : paiement mensuel. Mobile Money (MVola, Orange Money) et virement acceptés.",
+      },
+      {
+        q: "Travaillez-vous à distance ?",
+        a: "Oui, 100% à distance depuis Antananarivo, Madagascar. Clients locaux et internationaux via WhatsApp, email et visioconférence.",
+      },
+      {
+        q: "Quels délais pour un projet ?",
+        a: "Site vitrine : 1–2 semaines. Application complète : 4–12 semaines. Devis détaillé avec planning fourni.",
+      },
+      {
+        q: "Que faire si je ne suis pas satisfait ?",
+        a: "Je fais des révisions jusqu'à votre satisfaction. Pour le dépannage, pas de facturation si le bug n'est pas résolu.",
+      },
+    ],
+    cta: {
+      title:    "Vous avez un projet en tête ?",
+      subtitle: "Décrivez votre besoin — estimation gratuite sous 24h.",
+      btn:      "Discutons sur WhatsApp",
+      wp:       "Bonjour, je souhaite discuter d'un projet.",
+    },
   },
 } as const;

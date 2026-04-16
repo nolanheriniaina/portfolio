@@ -1,0 +1,27 @@
+[
+    {
+      "key": "shop",
+      "icon": "ShoppingBag"
+    },
+    {
+      "key": "app",
+      "icon": "Smartphone"
+    },
+    {
+      "key": "debug",
+      "icon": "Wrench"
+    },
+    {
+      "key": "data",
+      "icon": "Database"
+    },
+    {
+      "key": "deploy",
+      "icon": "Rocket"
+    },
+    {
+      "key": "ai",
+      "icon": "BrainCircuit"
+    }
+  ]
+  
