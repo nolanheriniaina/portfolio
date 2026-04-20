@@ -27,7 +27,7 @@ export default function HomePage() {
       <HeroSection />
       <ServicesSection />
       <ProjectsSection projects={projectsData} />
-      <PricingSection />
+      {/* <PricingSection /> */}
       <FloatingContactButton />
     </>
   );

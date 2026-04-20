@@ -1,6 +1,5 @@
 [
   { "id": "home",     "icon": "User",        "label": { "fr": "Accueil",  "en": "Home"     } },
   { "id": "services", "icon": "Globe",       "label": { "fr": "Services", "en": "Services" } },
-  { "id": "projects", "icon": "CheckCircle", "label": { "fr": "Projets",  "en": "Projects" } },
-  { "id": "pricing",  "icon": "Tag",         "label": { "fr": "Tarifs",   "en": "Pricing"  } }
+  { "id": "projects", "icon": "CheckCircle", "label": { "fr": "Projets",  "en": "Projects" } }
 ]
