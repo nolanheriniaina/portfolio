@@ -14,6 +14,7 @@ export default function ProjectsSection({ projects }: { projects: Project[] }) {
   const [hovering, setHovering] = useState(false);
   const [slideDir, setSlideDir] = useState<"next" | "prev">("next");
   const [animating, setAnimating] = useState(false);
+  const [nextImgIdx, setNextImgIdx] = useState<number | null>(null);
 
   const project = projects[slideIdx];
 
@@ -53,11 +54,11 @@ export default function ProjectsSection({ projects }: { projects: Project[] }) {
   useEffect(() => {
     if (hovering || project.images.length <= 1) return;
     const id = setInterval(
-      () => setImgIdx((i) => (i + 1) % project.images.length),
+      () => setNextImgIdx((imgIdx + 1) % project.images.length),
       1400
     );
     return () => clearInterval(id);
-  }, [project.images.length, hovering, slideIdx]);
+  }, [project.images.length, hovering, slideIdx, imgIdx]);
 
   const slideStyle: React.CSSProperties = {
     opacity: animating ? 0 : 1,
@@ -103,11 +104,17 @@ export default function ProjectsSection({ projects }: { projects: Project[] }) {
             onMouseLeave={() => setHovering(false)}
           >
             <img
-              key={imgIdx}
-              src={project.images[imgIdx]}
+              key={nextImgIdx ?? imgIdx}
+              src={project.images[nextImgIdx ?? imgIdx]}
               alt=""
               className="w-full h-full object-contain"
               style={{ animation: "imageFadeIn 0.35s ease both" }}
+              onLoad={() => {
+                if (nextImgIdx !== null) {
+                  setImgIdx(nextImgIdx);
+                  setNextImgIdx(null);
+                }
+              }}
             />
 
             {project.images.length > 1 && (
